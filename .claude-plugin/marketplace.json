@@ -1,0 +1,19 @@
+{
+  "name": "cc-to-codex",
+  "description": "Config-driven one-way sync from Claude Code (.claude) to Codex (.codex)",
+  "owner": {
+    "name": "sangmandu"
+  },
+  "plugins": [
+    {
+      "name": "cc-to-codex",
+      "description": "Config-driven one-way sync from Claude Code (.claude) to Codex (.codex)",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sangmandu/cc-to-codex.git"
+      },
+      "homepage": "https://github.com/sangmandu/cc-to-codex"
+    }
+  ]
+}
