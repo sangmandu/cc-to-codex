@@ -1,5 +1,5 @@
 ---
-name: cc-to-codex-config
+name: sync
 description: Configure and execute Claude Code → Codex sync. Generates .cc-to-codex.yaml config from interactive selection.
 scope: task
 trigger: /cc-to-codex, "sync to codex", "codex sync config"

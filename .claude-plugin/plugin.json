@@ -5,9 +5,7 @@
   "author": {
     "name": "sangmandu"
   },
-  "commands": [
-    "./commands/sync.md"
-  ],
+  "commands": [],
   "homepage": "https://github.com/sangmandu/cc-to-codex",
   "repository": "https://github.com/sangmandu/cc-to-codex",
   "license": "MIT",

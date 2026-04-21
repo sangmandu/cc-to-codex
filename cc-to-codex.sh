@@ -427,17 +427,16 @@ sync_hooks "$SRC_GLOBAL" "$DST_GLOBAL" "global"
 sync_hooks_json "$SRC_GLOBAL" "$DST_GLOBAL" "global"
 sync_claude_md "$SRC_GLOBAL/CLAUDE.md" "$DST_GLOBAL/AGENTS.md" "global"
 
-# Project sync (if scope includes project)
-if [[ "$SCOPE" == "project" ]]; then
-  PROJECT_SRC=$(get_config "project.claude_dir" "")
-  PROJECT_DST=$(get_config "project.codex_dir" "")
+# Project sync (if scope is a path, not "global")
+if [[ "$SCOPE" != "global" && -d "$SCOPE" ]]; then
+  PROJECT_ROOT="$SCOPE"
+  PROJECT_SRC="$PROJECT_ROOT/.claude"
+  PROJECT_DST="$PROJECT_ROOT/.codex"
 
-  if [[ -n "$PROJECT_SRC" && -n "$PROJECT_DST" ]]; then
+  if [[ -d "$PROJECT_SRC" ]]; then
     sync_skills "$PROJECT_SRC/skills" "$PROJECT_DST/skills" "project"
     sync_hooks "$PROJECT_SRC" "$PROJECT_DST" "project"
 
-    # Project CLAUDE.md → AGENTS.md
-    PROJECT_ROOT=$(dirname "$PROJECT_SRC")
     if [[ -f "$PROJECT_ROOT/CLAUDE.md" ]]; then
       sync_claude_md "$PROJECT_ROOT/CLAUDE.md" "$PROJECT_ROOT/AGENTS.md" "project"
     fi

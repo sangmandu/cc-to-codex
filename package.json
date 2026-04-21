@@ -4,7 +4,6 @@
   "description": "Config-driven one-way sync from Claude Code (.claude) to Codex (.codex)",
   "files": [
     "skills/",
-    "commands/",
     ".claude-plugin/",
     "cc-to-codex.sh"
   ],

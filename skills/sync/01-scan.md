@@ -56,18 +56,16 @@ Also detect inline references like `@RTK.md`, `@*.md`.
 Display the full list grouped by category:
 
 ```
-📋 Sync 가능 항목 목록
+Syncable items:
 
 [Skills] (global)
   1. wf — End-to-end automated dev workflow
-  2. code-writing — 코드 작성 규칙
-  3. ddd — 복잡한 기술 개념 단계별 설명
+  2. ddd — Step-by-step technical concept explanation
   ...
 
 [Hooks] (global)
   1. rtk-rewrite.sh
-  2. pre_git_push.py
-  3. post_tool_use.py
+  2. record-surface-session.sh
   ...
 
 [CLAUDE.md sections] (global)

@@ -8,13 +8,13 @@ Ask user for confirmation, then execute the sync.
 
 1. Show what will happen:
    ```
-   Sync를 실행합니다:
+   Ready to sync:
 
    Source: ~/.claude → Dest: ~/.codex
    Config: <config_path>
-   제외: <exclusion summary>
+   Excluded: <exclusion summary>
 
-   먼저 --dry-run으로 미리보기를 보여드릴까요?
+   Run --dry-run preview first?
    ```
 
 2. If user wants dry-run first:
@@ -23,7 +23,7 @@ Ask user for confirmation, then execute the sync.
    ```
    Show output, then ask:
    ```
-   이대로 실행할까요?
+   Proceed with actual sync?
    ```
 
 3. If user confirms (or skips dry-run):
@@ -33,7 +33,7 @@ Ask user for confirmation, then execute the sync.
 
 4. Show results:
    ```
-   Sync 완료!
+   Sync complete!
      Changed: N
      Skipped: N
    ```
