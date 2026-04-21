@@ -1,0 +1,16 @@
+{
+  "name": "cc-to-codex",
+  "version": "0.1.0",
+  "description": "Config-driven one-way sync from Claude Code (.claude) to Codex (.codex)",
+  "files": [
+    "skills/",
+    "commands/",
+    ".claude-plugin/",
+    "cc-to-codex.sh"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sangmandu/cc-to-codex"
+  }
+}
